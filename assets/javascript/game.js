@@ -8,8 +8,11 @@ var randIntTwo;
 var randIntThree;
 var randIntFour;
 var pointGoal;
+$("#win").text(win);
+$("#lose").text(lose);
 assignValues();
 displayTheirPoints();
+
 $("#img1").on("click", function() {
 theirPoints = theirPoints + randIntOne;
 dontGoOver();
@@ -52,7 +55,7 @@ function assignValues() {
     randIntEight = Math.floor(Math.random() * 10);
     pointGoal = randIntOne*randIntFive + randIntTwo*randIntSix + randIntThree*randIntSeven + randIntFour*randIntEight;
 
-    console.log(randIntOne, randIntTwo, randIntThree, randIntFour);
+   // console.log(randIntOne, randIntTwo, randIntThree, randIntFour);
     if (pointGoal>120 || pointGoal<19) {
         assignValues();
         } 
@@ -71,12 +74,28 @@ function dontGoOver() {
         theirPoints=0;
     }
 };
+var crystalNums =[];
+var randNums =[];
+function assignRandoms() {
+
+for (var i=0; i<4; i++) {
+    crystalNums[i] = Math.floor(Math.random() * 12) + 1 ;
+    randNums[i] = Math.floor(Math.random() * 10);
+}
+} 
+assignRandoms();
+
+var pointGoal2;
+function newFunction() {
+    pointGoal2 = crystalNums[0]*randNums[0] + crystalNums[1]*randNums[1] + crystalNums[2]*randNums[2] + crystalNums[3]*randNums[3];
+    if (pointGoal2>120 || pointGoal2<19) {
+        assignRandoms();
+        newFunction();
+}
+console.log(crystalNums, randNums);
+}
 
 
-// var newArray =[];
-// for (var i=0; i<8; i++) {
-//     newArray[i] = Math.floor(Math.random() * 12) + 1 ;
-// }
-// console.log(newArray);
-
+newFunction();
+console.log(pointGoal2);
 });
