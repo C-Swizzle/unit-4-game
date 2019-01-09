@@ -42,20 +42,20 @@ function displayTheirPoints() {
 
 //assigning point values to 4 crystals
 function assignValues() {
-    randIntOne = Math.floor(Math.random() * 13);
-    randIntTwo = Math.floor(Math.random() * 13);
-    randIntThree = Math.floor(Math.random() * 13);
-    randIntFour = Math.floor(Math.random() * 13);
+    randIntOne = Math.floor(Math.random() * 12) + 1;
+    randIntTwo = Math.floor(Math.random() * 12) + 1;
+    randIntThree = Math.floor(Math.random() * 12) + 1;
+    randIntFour = Math.floor(Math.random() * 12) + 1;
     randIntFive = Math.floor(Math.random() * 10);
     randIntSix = Math.floor(Math.random() * 10);
     randIntSeven = Math.floor(Math.random() * 10);
     randIntEight = Math.floor(Math.random() * 10);
     pointGoal = randIntOne*randIntFive + randIntTwo*randIntSix + randIntThree*randIntSeven + randIntFour*randIntEight;
-   
+
     console.log(randIntOne, randIntTwo, randIntThree, randIntFour);
-    if (pointGoal>120) {
+    if (pointGoal>120 || pointGoal<19) {
         assignValues();
-        }
+        } 
 };
 
 function dontGoOver() {
@@ -73,6 +73,10 @@ function dontGoOver() {
 };
 
 
-
+// var newArray =[];
+// for (var i=0; i<8; i++) {
+//     newArray[i] = Math.floor(Math.random() * 12) + 1 ;
+// }
+// console.log(newArray);
 
 });
