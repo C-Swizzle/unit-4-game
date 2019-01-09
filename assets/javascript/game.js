@@ -46,10 +46,10 @@ function assignValues() {
     randIntTwo = Math.floor(Math.random() * 13);
     randIntThree = Math.floor(Math.random() * 13);
     randIntFour = Math.floor(Math.random() * 13);
-    randIntFive = Math.floor(Math.random() * 6);
-    randIntSix = Math.floor(Math.random() * 6);
-    randIntSeven = Math.floor(Math.random() * 6);
-    randIntEight = Math.floor(Math.random() * 6);
+    randIntFive = Math.floor(Math.random() * 10);
+    randIntSix = Math.floor(Math.random() * 10);
+    randIntSeven = Math.floor(Math.random() * 10);
+    randIntEight = Math.floor(Math.random() * 10);
     pointGoal = randIntOne*randIntFive + randIntTwo*randIntSix + randIntThree*randIntSeven + randIntFour*randIntEight;
    
     console.log(randIntOne, randIntTwo, randIntThree, randIntFour);
