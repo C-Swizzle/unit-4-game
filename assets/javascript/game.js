@@ -45,6 +45,7 @@ function displayTheirPoints() {
 
 
 //-----------------------This block of code actually works, it's just ugly-------------------------------------
+
 //assigning point values to 4 crystals
 
 // function assignValues() {
@@ -108,8 +109,11 @@ function assignValues2() {
 
 // }
 }
-
-
+var pointGoal4;
+for (var i=0; i<4; i++) {
+    pointGoal4= pointGoal4 + crystalNums[i]*randNums[i];
+}
+console.log(pointGoal4);
 assignValues2();
 // console.log(pointGoal2);
 // console.log(crystalNums);
