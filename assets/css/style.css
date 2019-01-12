@@ -1,0 +1,58 @@
+h1 {
+    background-color: green;
+    padding: 20px 5px;
+    color: white;
+    font-size: 40px;
+    width: 33%;
+    text-align: center;
+}
+body {
+    background-image: url("../images/morocco.png");
+}
+.instructions {
+    width: 33%;
+    color: green;
+    background-color: white;
+    padding: 10px 5px;
+    font-weight: bold;    
+
+}
+#point-css {
+    background-color: aqua;
+    color: black;
+    padding: 20px 5px;
+    width: 33%;
+    margin: 5px 0px;
+    float: left;
+    font-size: 20px;
+
+}
+#their-points {
+    font-size: 55px;
+}
+#point-guess-css {
+    background-color: rgb(196, 36, 148);
+    color: black;
+    padding: 20px 5px;
+    width: 33%;
+    margin: 5px 0px;
+    font-size: 20px;
+
+}
+#point-goal {
+    font-size: 55px;
+}
+#counter {
+    background-color: green;
+    color: white;
+    padding: 20px 5px;
+    width: 20%;
+    margin: 5px 0px 5px 5px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+
+}
+#win, #lose {
+    font-size: 55px;
+}
